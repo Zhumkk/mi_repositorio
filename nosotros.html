@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Brunet</title>
+    <!-- FUENTE AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <meta name="keywords"  content="GAMES, ONLINE, ESPORT, MULTIPLAYER, LOL">
+    <meta name="description" content="Team Mjolnir tiene una trayectoria y un camino gamer que recorrer.">
+    <title>Team Mjolnir - Nuestra Historia</title>
+</head>
+<body>
+    
+<!-- SECCION CABEZERA  -->
+
+<header>
+    <section class="header">
+        <a href="#" class="header__logo"><span class="header__letra">M</span>jölnir</a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="header__navbar">
+            <a class="header__menu" href="./index.html">Inicio</a>
+            <a class="header__menu" href="./nosotros.html">Nosotros</a>
+            <a class="header__menu" href="./shop.html">Tienda</a>
+            <a class="header__menu" href="./galeria.html">Galeria</a>
+            <a class="header__menu" href="./contacto.html">Contacto</a>
+        </nav>
+    </section>
+</header>
+<main>
+
+    <div class="nosotros">
+        <h2 class="heading rotate-vert-center">
+            <span>N</span>
+            <span>O</span>
+            <span>S</span>
+            <span>O</span>
+            <span>T</span>
+            <span>R</span>
+            <span>O</span>
+            <span>S</span>
+        </h2>
+
+        <div class="contenedor">
+            <div class="contenido-seccion">
+                <div class="title">
+                    <h1>MJÖLNIR TEAM</h1>
+                </div>
+                <div class="contenido">
+                    <h3>ÚNETE AL CLUB DE LOS GANADORES</h3>
+                    <p>
+                        Si por algo nos hemos distinguido en nuestros 17 años de vida ha sido por ser un club ganador. Un sentimiento que no se limita a un escudo o a unos colores, sino que trasciende con cada jugador que ha vestido nuestra camiseta y, sobre todo, a través de cada fan que en algún momento se ha dejado el aliento por nosotros.
+                        <br>
+                        Nuestro espíritu se mantiene inalterable, pero el mundo cambia, aparecen nuevos personajes, retos y paisajes; hemos crecido, hemos madurado. Para mostrar esta evolución, MJÖLNIR redibuja sus señas de identidad. Lo que jamás rediseñaremos es el papel que tú tienes en MJÖLNIR: ustedes son los que forman ‘The International Winners Club’.
+                        <br>
+                        Hoy damos un gran paso en nuestra historia. Nuestra nueva imagen recoge los sentimientos de miles de fans con los que seguiremos caminando juntos hacia nuevas conquistas. Una familia que se encuentra a lo largo y ancho del planeta y que esperamos que cada día sea mayor. Acompáñanos en esta aventura #WeAreMJÖLNIR.</p>
+                    <div class="buttom">
+                        <img src="./images/MJOLNIR.png" alt="">
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="./images/nosotros.jpeg" alt="Foto Equipo Trabajando">
+            </div>
+        </div>
+    </div>
+    
+
+
+</main>
+
+<footer class="footer">
+    <h2 class="footer__titulo"> Creado por <span class="footer__span"> Santiago Brunet </span> | Mjölnir Team </h2>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+            $(".menu-toggle-btn").click(function(){
+                $(this).toggleClass("fa-times");
+                $(".header__navbar").toggleClass("active")
+            });
+</script>
+</body>
+</html>

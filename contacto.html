@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Brunet</title>
+    <!-- FUENTE AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <meta name="keywords"  content="GAMES, ONLINE, ESPORT, MULTIPLAYER, LOL">
+    <meta name="description" content="Quieres conocer a Team Mjolnir? Nosotros a ti si.">
+    <title>Team Mjolnir - Contacto</title>
+</head>
+<body>
+    
+<!-- SECCION CABEZERA  -->
+
+<header>
+    <section class="header">
+        <a href="#" class="header__logo"><span class="header__letra">M</span>jölnir</a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="header__navbar">
+            <a class="header__menu" href="./index.html">Inicio</a>
+            <a class="header__menu" href="./nosotros.html">Nosotros</a>
+            <a class="header__menu" href="./shop.html">Tienda</a>
+            <a class="header__menu" href="./galeria.html">Galeria</a>
+            <a class="header__menu" href="./contacto.html">Contacto</a>
+        </nav>
+    </section>
+</header>
+<main>
+
+<!-- SECCION FOOTER  -->
+
+
+<!-- SECCION CONTACTO  -->
+
+<section class="contact" id="contact">
+    
+    <h2 class="heading rotate-vert-center">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+        <span>O</span>
+    </h2>
+
+    <div class="contact__hilera">
+
+        <div class="contact__cajaImg">
+            <img class="contact__img" src="images/contacto.jpg" alt="Fondo Contacto">
+        </div>
+
+        <form class="contact__form" action="">
+            <div class="contact__datos">
+                <input class="contact__escribir" type="text" placeholder="Nombre">
+                <input class="contact__escribir" type="email" placeholder="E-Mail">
+            </div>
+            <div class="contact__datos">
+                <input class="contact__escribir" type="number" placeholder="Numero">
+                <input class="contact__escribir" type="text" placeholder="Asunto">
+            </div>
+            <textarea class="contact__texto" placeholder="Mensaje..." name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- SECCION CONTACTO TERMINA -->
+</main>
+<footer class="footer">
+    <h2 class="footer__titulo"> Creado por <span class="footer__span"> Santiago Brunet </span> | Mjölnir Team </h2>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+            $(".menu-toggle-btn").click(function(){
+                $(this).toggleClass("fa-times");
+                $(".header__navbar").toggleClass("active")
+            });
+</script>
+</body>
+</html>

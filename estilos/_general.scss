@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+  --violeta:#5c0983;
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+*::selection{
+  background:var(--violeta);
+  color:#fff;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+section{
+  padding:2rem 9%;
+}
+/*ESTILOS DE TITULOS EN CUADROS*/
+.menu-toggle-btn{
+  float: right;
+  height: 90px;
+  line-height: 90px !important;
+  color: #fff;
+  font-size: 26px;
+  display: none;
+  cursor: pointer;
+}
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+.heading span{
+  font-size: 3.5rem;
+  background:rgba(174, 0, 255, 0.26);
+  color:var(--violeta);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+.heading span.space{
+  background:none;
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--violeta);
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid var(--violeta);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.7rem;
+}
+.btn:hover{
+  background:rgba(174, 0, 255, 0.26);
+  color:var(--violeta);
+}
+/*WEBKIT PARA EFECTO DE TITULOS*/
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-vert-center 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+/*  MEDIA QUERIES  */
+@media (max-width:1200px){
+    html{
+      font-size: 55%;
+    }
+  }
+  @media (max-width:991px){
+    header{
+      padding:2rem;
+    }
+    section{
+      padding:2rem;
+    }
+  }
+  @media (max-width:768px){
+   .menu-toggle-btn{
+     display: block;
+   }
+   .header__navbar{
+     position: fixed;
+     width: 100%;
+     max-width: 400px;
+     background: #24243e;
+     top: 90px;
+     right: 0;
+     display: none;
+     padding: 20px 400px;
+     box-sizing: border-box;
+   }
+   .header__navbar::before{
+     content: "";
+     border-left: 10px solid transparent;
+     border-right: 10px solid transparent;
+     border-bottom: 10px solid #172b4d;
+     position: absolute;
+     top: -10px;
+     right: 10px;
+   }
+   .header__navbar a{
+     display: block;
+     margin: 10px 0;
+   }
+   .header__navbar.active{
+    display: block;
+  }
+}
+  @media (max-width:450px){
+    html{
+      font-size: 50%;
+    }
+    .heading span{
+      font-size: 2.5rem;
+    }
+    .contact .row form .inputBox input{
+      width:100%;
+    }
+  }
